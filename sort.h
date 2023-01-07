@@ -3,6 +3,8 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
+#include <unistd.h>
 
 /* Structures */
 
@@ -21,7 +23,9 @@ typedef struct listint_s
 } listint_t;
 
 /* Functions */
-
+void print_array(const int *array, size_t size);
+void print_list(const listint_t *list);
+void switch_a(int *p_a, int *p_b);
 void bubble_sort(int *array, size_t size);
 void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
